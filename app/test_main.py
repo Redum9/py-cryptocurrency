@@ -13,6 +13,7 @@ test_data = [
     (100, 100, "Do nothing"),
 ]
 
+
 @pytest.mark.parametrize(
     "current_rate, prediction_rate, expected",
     test_data
