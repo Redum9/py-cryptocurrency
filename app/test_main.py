@@ -4,13 +4,13 @@ from app.main import cryptocurrency_action
 
 
 test_data = [
-    (100, 105.1, "Buy more cryptocurrency"),   # > 5%
-    (100, 105.0, "Do nothing"),                # == 5% (ровно 5 — не более)
-    (100, 120, "Buy more cryptocurrency"),     # >> 5%
-    (100, 94.9, "Sell all your cryptocurrency"), # < -5%
-    (100, 95.0, "Do nothing"),                 # == -5%
-    (100, 80, "Sell all your cryptocurrency"),   # << -5%
-    (100, 100, "Do nothing"),                  # Нет изменений
+    (100, 105.1, "Buy more cryptocurrency"),
+    (100, 105.0, "Do nothing"),
+    (100, 120, "Buy more cryptocurrency"),
+    (100, 94.9, "Sell all your cryptocurrency"),
+    (100, 95.0, "Do nothing"),
+    (100, 80, "Sell all your cryptocurrency"),
+    (100, 100, "Do nothing"),
 ]
 
 @pytest.mark.parametrize(
